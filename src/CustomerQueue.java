@@ -1,26 +1,33 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerQueue {
+public class CustomerQueue extends Heap<Customer>{
 
     private int customerNum;
-    private List<Customer> queue;
 
-    public CustomerQueue(){
-        customerNum = 0;
-        queue = new ArrayList<>();
+    public CustomerQueue() {
+        super();
+        this.customerNum = heap.size();
     }
 
-    //TODO
-    public void heappush(Customer customer){
-
+    public void addCustomer(Customer customer){
+        heappush(customer);
     }
 
-    //TODO
-    public Customer heappop(){}
+    public Customer removeCustomer(){
+        return heappop();
+    }
 
     public int getCustomerNum() {
         return customerNum;
+    }
+
+    @Override
+    boolean priorThan(Customer customer1, Customer customer2) {
+        if(customer1.isIfVIP() == customer2.isIfVIP()){
+            return customer1.getArrivalTime() < customer2.getArrivalTime();
+        }
+        else return customer1.isIfVIP();
     }
 
 }
