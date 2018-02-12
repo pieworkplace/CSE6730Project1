@@ -11,16 +11,25 @@ public class CustomerQueueTest {
         Customer customer7 = new Customer(true, 1800, 500, 500);
 
         customerQueue.addCustomer(customer1);
+        System.out.println(customerQueue.getCustomerNum());
         customerQueue.addCustomer(customer2);
         customerQueue.addCustomer(customer3);
         System.out.println(customerQueue.removeCustomer());
         System.out.println(customerQueue.removeCustomer());
+
+        System.out.println(customerQueue.getCustomerNum());
+
         System.out.println(customerQueue.removeCustomer());
         System.out.println(customerQueue.removeCustomer());
+
+        System.out.println(customerQueue.getCustomerNum());
+
         customerQueue.addCustomer(customer4);
         customerQueue.addCustomer(customer5);
         customerQueue.addCustomer(customer6);
         customerQueue.addCustomer(customer7);
+
+        System.out.println(customerQueue.getCustomerNum());
 
         System.out.println(customerQueue.removeCustomer());
         System.out.println(customerQueue.removeCustomer());

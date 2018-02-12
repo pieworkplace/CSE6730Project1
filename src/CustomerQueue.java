@@ -12,10 +12,15 @@ public class CustomerQueue extends Heap<Customer>{
 
     public void addCustomer(Customer customer){
         heappush(customer);
+        customerNum++;
     }
 
     public Customer removeCustomer(){
-        return heappop();
+        Customer res = heappop();
+        if (res != null){
+            customerNum--;
+        }
+        return res;
     }
 
     public int getCustomerNum() {
