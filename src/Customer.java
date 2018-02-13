@@ -1,8 +1,19 @@
 public class Customer extends Event{
 
+    /** Customer is a kind of event.
+     * It describes a customer arrival event.
+     * It specifies whether the customer is a VIP,
+     * how long can the customer wait,
+     * when the customer arrived,
+     * and how long the customer need to be served.
+     * Static parameters include number of customer,
+     * number of impatient customer,
+     * and total waiting time for all the customer.
+     */
     private static int numCustomer = 0;
     private static int impatientCustomer = 0;
     private static int totalWaitingTime = 0;
+
     private boolean ifVIP;
     private int patienceDuration;
     private int arrivalTime;

@@ -3,6 +3,10 @@ import java.util.List;
 
 public abstract class Heap<T> {
 
+    /** Data structure heap for customer queue and event list.
+     * Classes that use it must rewrite priorThan method.
+     */
+
     public List<T> heap;
 
     Heap() {

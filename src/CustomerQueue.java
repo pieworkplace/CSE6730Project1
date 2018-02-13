@@ -1,7 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class CustomerQueue extends Heap<Customer>{
+
+    /** CustomerQueue represents the queue in the bank.
+     * It contains a priority queue of the waiting customers.
+     * This class extends Heap and rewrote the compare (priorThan) function.
+     * vip customers stands in front of ordinary customers.
+     * and the customers then sorted by arrival time.
+     */
 
     private int customerNum;
 

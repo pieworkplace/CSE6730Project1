@@ -1,5 +1,9 @@
 public class CustomerQueueTest {
 
+    /** Other tests are all seen by printing results on screen.
+     * Therefore, this test class solely test the correctness of my heap.
+     */
+
     public static void test() {
         CustomerQueue customerQueue = new CustomerQueue();
         Customer customer1 = new Customer(true, 1800, 200, 500);

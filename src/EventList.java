@@ -1,5 +1,11 @@
 public class EventList extends Heap<Event>{
 
+    /** This class is the priority queue of event.
+     * It rewrote the compare method priorThan.
+     * Elements in the queue are events.
+     * They are sorted by arrival time or teller free time.
+     */
+
     public Event popEvent(){
         return heappop();
     }

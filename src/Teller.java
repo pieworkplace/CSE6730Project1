@@ -1,5 +1,13 @@
 public class Teller extends Event{
 
+    /** Teller is a kind of event.
+     * It describes when a teller is free
+     * it shows which teller (SSN) is free,
+     * how long the teller has worked,
+     * whether the teller is currently free,
+     * and the teller's next free time.
+     */
+
     private int workingDuration;
     private boolean isFree;
     private final int SSN;

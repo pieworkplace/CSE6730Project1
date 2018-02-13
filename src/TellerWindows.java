@@ -3,6 +3,11 @@ import java.util.List;
 
 public class TellerWindows {
 
+    /** TellerWindows is a list of tellers.
+     * it also provide methods to check available teller,
+     * give statistics about tellers' average service time, etc.
+     */
+
     private List<Teller> windows;
 
     public TellerWindows(int windowNum){
